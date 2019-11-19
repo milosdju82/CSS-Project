@@ -1,0 +1,954 @@
+/*GENERAL STYLES*/
+
+*{	
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+span.orange {
+	color: #f76126;
+}
+
+h5 {
+	font-size: 2em;
+	font-weight: 600;
+	margin-top: 90px;
+	margin-bottom: 10px;
+}
+
+h6 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+
+/*HEADER*/
+
+header{
+	height: 800px;
+	background-image: url("img/main-banner.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 30px;
+	color: white;
+}
+
+
+nav {
+	max-width: 60%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	align-items: center;
+}
+
+header nav div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80px;
+}
+
+header nav div img {
+	width: 40px;
+	padding-left: 18px;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 0.9em;
+	font-weight: 100;
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: 800;
+	margin-top: 8%;
+	margin-bottom: 20px;
+}
+
+header ul {
+	position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	width: 100px;
+}
+
+header ul li {
+	position: relative;
+}
+
+header ul ul {
+	position: absolute;
+	display: none;
+	background-color: #404952;
+	border: 1px solid grey;
+	border-radius: 10px;
+	font-size: 1em;
+	font-weight: 600;
+	width: 170px;
+	height: 200px;
+	padding: 20px 0;
+	left: -80px;
+	top: -8px;
+}
+
+header ul .submenu li a {
+	color: #fff;
+	text-decoration: none;
+	width: 200px;
+	padding: 30px;
+}
+
+header ul li:hover ul {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header ul li ul li:hover a {
+	color: #f76126;
+	transition: 0.5s;
+}
+
+header p {
+	font-size: 1.4em;
+	line-height: 0.8em;
+}
+
+div.header-buttons {
+	width: 450px;
+	margin: 80px auto 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div.header-buttons a {
+	display: inline-block;
+	width: 210px;
+	padding: 13px 53px;
+	border: solid 1px grey;
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+	border-radius: 10px;
+}
+
+div.header-buttons a.hu:hover {
+	background-color: #f76126;
+	transition: 0.5s;
+}
+
+div.header-buttons a.ow:hover {
+	background-color: #f76126;
+	transition: 0.5s;
+
+}
+header > a > img {
+	margin-top: 220px;
+}
+
+
+/*SECTION SERVICES DESIGN*/
+
+section#services {
+	width: 100%;
+	height: 370px;
+	margin: 100px auto 0;
+}
+
+section#services > div {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section .service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 142px;
+	margin-bottom: 50px;
+}
+
+
+section div.service div {
+	width: 140px;
+	height: 140px;
+	line-height: 190px;
+	border: 1px solid #b4b4b4;
+	border-radius: 50%;
+}
+
+section div.service div img {
+	display:inline-block;
+	margin: 0 auto;
+}
+
+h4 {
+	margin-top:25px;
+	margin-bottom:20px;
+	font-weight: 600;
+	font-size: 0.9em;
+}
+
+section div.service p {
+	width: 150px;
+	font-size: 0.8em;
+	text-align: center;
+	line-height: 1.8em;
+}
+
+
+/*SECTION FORM NEWSLETTER*/
+
+#newsletter {
+	height: 250px;
+	background-image: url("img/newsletter-background.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+#newsletter form {
+	width: 60%;
+	height: 200px;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+
+#newsletter form input[type="email"] {
+	width: 50%;
+	padding: 13px 13px;
+	border:none;
+	border-radius: 10px;
+	outline: none;
+	text-align: left;
+	font-size: 0.9em;
+}
+
+#newsletter form input[type="submit"] {
+	width: 22%;
+	padding: 13px 13px;
+	border-radius: 10px;
+	background-color: #f76126;
+	color: white;
+	border: none;
+	margin-left: 22px;
+	font-weight: 600;
+	font-size: 0.9em;
+}
+
+
+/*SECTION OUR WORK*/
+
+#our-works {
+	width: 60%;
+	margin: 0 auto;
+}
+
+p {
+	font-size: 0.9em;
+	line-height: 1.8em;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#our-works > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: 80px auto;
+}
+
+.element-1 {
+	background-image: url(img/portfolio-1.png);
+}
+.element-2 {
+	background-image: url(img/portfolio-2.png);
+}
+.element-3 {
+	background-image: url(img/portfolio-3.png);
+}
+.element-4 {
+	background-image: url(img/portfolio-4.png);
+}
+.element-5 {
+	background-image: url(img/portfolio-5.png);
+}
+.element-6 {
+	background-image: url(img/portfolio-6.png);
+}
+
+#our-works div div {
+	width: 31.6%;
+	height: 330px;
+	border-radius: 10px;
+	margin-bottom: 24px;
+	padding-top: 80px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.gallery > div > h6,
+div.gallery > div > p {
+	color: white;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+div.gallery > div > button {
+	font-size: 0.9em;
+	margin: 33px;
+	padding: 13px 37px;
+	border-radius: 10px;
+	border: none;
+	background-color: white;
+	color: #f76126;
+	cursor: pointer;
+}
+
+div.gallery > div > h6,
+div.gallery > div > p,
+div.gallery > div > button {
+	opacity: 0;
+}
+
+/*GALLERY HOVER*/
+
+div.gallery > div.element-1:hover {
+	background: linear-gradient(rgba(247, 97, 38, 0.9), rgba(247, 97, 38, 0.9)),
+	url("img/portfolio-1.png");
+}
+div.gallery > div.element-2:hover {
+	background: linear-gradient(rgba(247, 97, 38, 0.9), rgba(247, 97, 38, 0.9)),
+	url("img/portfolio-2.png");
+}
+div.gallery > div.element-3:hover {
+	background: linear-gradient(rgba(247, 97, 38, 0.9), rgba(247, 97, 38, 0.9)),
+	url("img/portfolio-3.png");
+}
+div.gallery > div.element-4:hover {
+	background: linear-gradient(rgba(247, 97, 38, 0.9), rgba(247, 97, 38, 0.9)),
+	url("img/portfolio-4.png");
+}
+div.gallery > div.element-5:hover {
+	background: linear-gradient(rgba(247, 97, 38, 0.9), rgba(247, 97, 38, 0.9)),
+	url("img/portfolio-5.png");
+}
+div.gallery > div.element-6:hover {
+	background: linear-gradient(rgba(247, 97, 38, 0.9), rgba(247, 97, 38, 0.9)),
+	url("img/portfolio-6.png");
+}
+
+div.gallery div:hover h6,
+div.gallery div:hover p,
+div.gallery div:hover button {
+	opacity: 1;
+	transition: 1s;
+}
+
+section#our-works button {
+	font-size: 0.9em;
+	padding: 13px 50px;
+	margin-bottom: 80px;
+	border-radius: 10px;
+	border: 0.5px solid lightgrey;
+	background-color: white;
+	cursor: pointer;
+}
+
+
+/*SECTION PERSON*/
+
+section#person {
+	background-image: url("img/testimonials-background.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 470px;
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+
+div.left img,
+div.right img {
+	display: inline-block;
+	position: relative;
+	width: 20px;
+	top: 120px;
+}
+
+.left img {
+	left: 120px;
+}
+
+.right img {
+	right: 120px;
+}
+
+section#person img.avatar{
+	width: 110px;
+	margin-bottom: 30px;
+}
+
+section#person p {
+	width: 100%;
+	color: white;
+	font-style: italic;
+	font-size: 1.4em;
+	line-height: 0.9em;
+}
+
+section#person p:last-child {
+	margin-top: 50px;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1em;
+}
+
+
+/*SECTION OUR TEAM*/
+
+section#team div.all {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 60%;
+	height: 520px;
+	max-width: 1050px;
+	margin: 50px auto 100px;
+}
+
+section#team div.all div.team-member {
+	width: 220px;
+	margin: 10 auto;
+}
+
+section#team div.all div.team-member img {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+section#team div.all div.social-items img {
+	width: 80px;
+	margin: 0;
+}
+
+div.social-items {
+	padding: 20px 0;
+}
+
+div.team-member p {
+	width: 100%;
+	font-size: 0.8em;
+	line-height: 1.8em;
+}
+
+section#team div.all div.team-member:hover > img {
+	width: 110%;
+	transition: 0.3s;
+	border-bottom: 5px solid #f76126;
+	border-radius: 12px;
+}
+
+
+/*SECTION SAY HELLO*/
+
+section#hello {
+	width: 100%;
+	background-image: url("img/contact-background.jpg");
+	height: 680px;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 100px;
+}
+
+section#hello h5 {
+	color: white;
+	margin-top: 0;
+}
+
+section#hello p {
+	width: 25%;
+	color: white;
+	line-height: 1.5em;
+	font-size: 0.9em;
+}
+
+section#hello form {
+	max-width: 720px;
+	width: 100%;
+	margin: 50px auto 0;
+	display: flex;
+	flex-direction: column;
+}
+
+section#hello form div {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 10px 0;
+}
+
+div.first input {
+	width: 48%;
+	padding: 13px;
+	text-align: left;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+
+div.second textarea {
+	width: 100%;
+	height: 180px;
+	margin: 5px 0;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	text-align: left;
+	padding: 10px;
+}
+
+div.third input {
+	width: 27%;
+	padding: 13px 20px;
+	background-color: #f76126;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-weight: 600;
+}
+
+div.third img {
+	display: inline-block;
+	width: 35%;
+	height: 35%;
+}
+
+
+/*FOOTER*/
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: #404952;
+	color: white;
+}
+
+footer p {
+	width: 60%;
+	text-align: left;
+	line-height: 100px;
+	font-size: 0.9em;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1620px) {
+
+	nav {
+		max-width: 70%;
+	}
+
+	section#services > div {
+		width: 70%;
+	}
+
+	#newsletter form {
+		width: 70%;
+	}
+
+	#our-works {
+		width: 70%;
+	}
+
+	section#team div.all {
+		width: 70%;
+	}
+
+	footer p {
+		width: 70%;
+	}
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+	nav {
+		max-width: 80%;
+	}
+
+	section#services > div {
+		width: 80%;
+	}
+
+	#newsletter form {
+		width: 80%;
+	}
+
+	#our-works {
+		width: 80%;
+	}
+
+	#our-works div div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#our-works button {
+		margin: 33px 30px 0 30px;
+	}
+
+	section#person p {
+		width: 90%;
+	}
+
+	section#team div.all {
+		width: 80%;
+	}
+
+	footer p {
+		width: 80%;
+	}
+
+}
+
+
+@media screen and (max-width: 1260px) {
+
+	nav {
+		max-width: 85%;
+	}
+
+	section#services > div {
+		width: 85%;
+		justify-content: space-around;
+	}
+
+	#newsletter form {
+		width: 85%;
+	}
+
+	#our-works {
+		width: 85%;
+	}
+
+	section#person p {
+		width: 80%;
+	}
+
+	.left img {
+		left: 80px;
+	}
+
+	.right img {
+		right: 80px;
+	}
+
+	section#team div.all {
+		width: 85%;
+		height: 1040px;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	section#team div.all div.team-member {
+		margin: 50px 100px;	
+		align-items: flex-end;
+	}
+
+	footer p {
+		width: 85%;
+	}
+
+}
+
+
+@media screen and (max-width: 1080px) {
+
+
+	h6 {
+		font-size: 1.2em;
+	}
+	nav {
+		max-width: 90%;
+	}
+
+	header {
+		height: 700px;
+	}
+
+	header > a > img {
+		margin-top: 120px;
+	}
+
+	section#services {
+		height: 740px;
+	}
+
+	section#services > div {
+		width: 80%;
+	}
+
+	section .service {
+		min-width: 300px;
+	}
+
+	#newsletter form {
+		width: 90%;
+	}
+
+	#our-works {
+		width: 90%;
+	}
+
+	section#person p {
+		width: 70%;
+	}
+
+	section#team div.all {
+		width: 90%;
+	}
+
+	section#team div.all div.team-member {
+		margin-bottom: 30px;
+	}
+
+	footer p {
+		width: 90%;
+	}
+
+}
+
+
+@media screen and (max-width: 960px) {
+
+	section#services > div {
+		width: 90%;
+	}
+
+	section .service {
+		min-width: 360px;
+	}
+
+	#our-works div div {
+		width: 48%;
+		background-size: cover;
+	}
+
+	#our-works > div {
+		margin-bottom: 0;
+	}
+
+	#our-works p,
+	#team p,
+	section#hello p {
+		width: 80%;
+	}
+
+	section#team div.all {
+		margin: 20px auto;
+		height: 2100px;
+	}
+
+	.left img {
+		left: 60px;
+	}
+
+	.right img {
+		right: 60px;
+	}
+	
+	div.gallery > div p {
+		width: 80%;
+	}
+
+	section#hello form {
+		width: 95%;
+	}
+
+}
+
+
+@media screen and (max-width: 780px) {
+
+	header {
+		height: 600px;
+	}
+
+	header p {
+		width: 90%;
+	}
+
+	div.header-buttons {
+		margin: 50px auto 0;
+	}
+
+	header > a > img {
+		margin-top: 60px;
+	}
+
+	h6 {
+		font-size: 1.3em;
+	}
+
+	section#services {
+		height: 1300px;
+	}
+
+	section#services > div {
+		width: 90%;
+	}
+
+	section .service {
+		min-width: 400px;
+	}
+
+	#newsletter form {
+		width: 100%;
+	}
+
+	#our-works {
+		width: 60%;
+	}
+
+	#our-works div div {
+		width: 100%;
+	}
+
+	.left img {
+		left: 30px;
+	}
+
+	.right img {
+		right: 30px;
+	}
+
+	section#team div.all {
+		margin: 0px auto;
+		margin-bottom: 50px;
+	}
+
+	section#team div.all div.team-member {
+		margin: 0 auto;
+	}
+
+	section#hello {
+		padding-top: 50px;
+		height: 600px;
+	}
+
+	section#hello form {
+		width: 90%;
+	}
+
+	div.third input {
+		width: 30%;
+		height: 30%;
+		padding: 10px 20px;
+	}
+
+	div.third img {
+		display: inline-block;
+		width: 40%;
+		height: 40%;
+	}
+
+	#person div:last-child {
+		display: flex;
+		align-items: center;
+	}
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+	header ul ul {
+		width: 150px;
+		left: -60px;
+	}
+
+	div.header-buttons {
+		width: 400px;
+	}
+
+	div.header-buttons a {
+		width: 190px;
+		padding: 13px 30px;
+	}
+
+	#newsletter {
+		display: flex;
+		align-items: center;
+	}
+	#newsletter form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 40px;
+		align-items: center;
+	}
+
+	#newsletter form input[type="email"] {
+		width: 100%;
+	}
+
+	#newsletter form input[type="submit"] {
+		width: 40%;
+		margin: 0;
+	}
+
+	#our-works {
+		width: 90%;
+	}
+
+	section#person p {
+		font-size: 1.2em;
+	}
+
+	section#person p:last-child {
+		margin-top: 30px;
+		font-size: 0.9em;
+	}
+
+	div.third img {
+		display: inline-block;
+		width: 50%;
+		height: 50%;
+	}
+
+}
+
+/*ENDE*/
