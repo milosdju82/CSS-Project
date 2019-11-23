@@ -580,11 +580,19 @@ div.third input {
 	display: inline-block;
 	width: 27%;
 	padding: 13px 20px;
-	background-color: #f76126;
 	color: white;
-	border: none;
+	background-color: #404952;
+	border: 1px solid grey;
 	border-radius: 10px;
 	font-weight: 600;
+	-webkit-filter: brightness:(60%);
+}
+
+div.third input:hover {
+	background-color: #f76126;
+	transition: 0.3s;
+	border: none;
+	-webkit-filter: brightness(110%);
 }
 
 div.third a {
@@ -802,6 +810,7 @@ footer p {
 
 	section#team div.all {
 		width: 90%;
+		height: 1200px;
 	}
 
 	section#team div.all div.team-member {
@@ -938,7 +947,6 @@ footer p {
 
 	div.third input {
 		width: 30%;
-		height: 30%;
 		padding: 10px 20px;
 	}
 
@@ -1006,11 +1014,6 @@ footer p {
 		font-size: 0.9em;
 	}
 
-	div.third img {
-		display: inline-block;
-		width: 50%;
-		height: 50%;
-	}
 
 }
 
