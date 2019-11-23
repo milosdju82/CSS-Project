@@ -465,6 +465,29 @@ div.social-items {
 	padding: 20px 0;
 }
 
+div.social-items a {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin: 0 4px;
+	background-image: url(img/social-icons2.png);
+	background-size: cover;
+	background-position: center;
+}
+
+div.social-items a:first-child {
+	background-position: left;
+}
+
+div.social-items a:last-child {
+	background-position: right;
+}
+
+div.social-items a:hover {
+	transform: scale(1.4);
+	transition: 0.3s;
+}
+
 div.team-member p {
 	width: 100%;
 	font-size: 0.8em;
