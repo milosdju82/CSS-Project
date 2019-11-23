@@ -561,7 +561,23 @@ div.second textarea {
 	padding: 10px;
 }
 
+div.third {
+	display: flex;
+	justify-content: space-between;
+	height: 48px;
+}
+
+#hello div.third div.social-items {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 div.third input {
+	display: inline-block;
 	width: 27%;
 	padding: 13px 20px;
 	background-color: #f76126;
@@ -571,10 +587,34 @@ div.third input {
 	font-weight: 600;
 }
 
-div.third img {
+div.third a {
 	display: inline-block;
-	width: 35%;
-	height: 35%;
+	width: 35px;
+	height: 40px;
+	padding: 0 22px;
+	background-image: url(img/social-icons.png);
+	background-size: cover;
+	background-position: left;
+}
+
+div.third a:nth-child(2) {
+	background-position: -58px;
+}
+
+div.third a:nth-child(3) {
+	background-position: -115px;
+}
+
+div.third a:nth-child(4) {
+	background-position: -173px;
+}
+
+div.third a:nth-child(5) {
+	background-position: -231px;
+}
+
+div.third a:hover {
+	-webkit-filter: brightness(150%);
 }
 
 
